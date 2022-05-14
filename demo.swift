@@ -107,3 +107,34 @@ while guess != magicNum {
 
 print("You're right it was \(guess)!")
 
+// Sets, unique unordered arrays; array are not unique and are ordered
+var emptySet = Set<Type>()
+var vowels: Set = ["A", "E", "I", "O", "U"]
+
+var swim: Set = ["Turtles", "Ducks", "Puffins", "Shark"]
+var fly: Set = ["Humming birds", "Bats", "Ducks", "Puffins"]
+var swimAndFly = fly.intersection(swim)
+print(swimAndFly)
+
+var consonants: Set = ["B", "C", "D", "F", "G", "H", "J", "K", "L", "M", "N", "P", "Q", "R", "S", "T", "V", "W", "X", "Y", "Z"]
+var vowels: Set = ["A", "E", "I", "O", "U"]
+alphabet = vowels.union(consonants)
+print(alphabet)
+
+// Find values that exists in one set but not the other
+var oscarWinners: Set = ["Heath Ledger", "Rita Moreno", "Audrey Hepburn", "John Legend"]
+var emmyWinners: Set = ["Peter Dinklage", "John Legend", "Audrey Hepburn", "Rita Moreno"]
+var difference = emmyWinners.symmetricDifference(oscarWinners)
+print(difference)
+
+// Any values shared by first and second array are removed from the first array, create new array
+var foodEmojis: Set = ["🥕", "🍇", "🌶️", "🍒", "🍎", "🥦"]
+var fruitEmojis: Set = ["🍇", "🍎", "🍒"]
+var veggieEmojis = foodEmojis.subtracting(fruitEmojis)
+print(veggieEmojis)
+
+// Dictionaries/Objects, unordered lists
+
+var emptyLiteral: [String: Int] = [:]
+var emptyInitializer= [String: Bool]()
+
