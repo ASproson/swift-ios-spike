@@ -133,8 +133,31 @@ var fruitEmojis: Set = ["🍇", "🍎", "🍒"]
 var veggieEmojis = foodEmojis.subtracting(fruitEmojis)
 print(veggieEmojis)
 
+
 // Dictionaries/Objects, unordered lists
 
 var emptyLiteral: [String: Int] = [:]
 var emptyInitializer= [String: Bool]()
 
+// Type Inference
+var movieYears = ["Finding Nemo": 2003, "Toy Story": 1995]
+
+// Adding to a pre-existing dictionary
+var teaSteepingTemperature = [
+  "Black": 212,
+  "Oolong": 185,
+  "White": 185
+]
+
+teaSteepingTemperature["Green"] = 185
+teaSteepingTemperature["Rooibos"] = 212
+
+// Editing a pre-existing dictionary
+
+var abbreviations = [
+  "LOL": "Laboring Over Latkes",
+  "BRB": "Bringing Radishes Back",
+]
+
+abbreviations["LOL"] = "Laugh Out Loud"
+abbreviations.updateValue("Be Right Back", forKey: "BRB")
