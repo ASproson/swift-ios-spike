@@ -186,3 +186,31 @@ var flowerNames = [
 var sunflowerScientific = flowerNames["Sunflower"]!
 print(sunflowerScientific)
 
+// Looping through a dictionary
+var mythology = [
+  "Zeus": "Jupiter",
+  "Athena": "Minerva", 
+  "Poseidon": "Neptune",
+  "Demeter": "Ceres"]
+
+for (greekName, romanName) in mythology {
+  print("\(greekName) is also known as \(romanName)")
+}
+
+// Looping a dictionaries values only
+var lemonadeStand = [
+  "April": 8.50,
+  "May": 12.75,
+  "June": 22.50,
+  "July": 38.25, 
+  "August": 32.50,
+  "September": 11.50
+]
+
+var total: Double = 0.0
+
+for monthlyProfit in lemonadeStand.values {
+  total += monthlyProfit
+}
+
+print("Total profits are \(total)")
